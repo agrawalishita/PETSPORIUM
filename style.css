@@ -17,10 +17,11 @@
 }
 .navbar{
     display: flex;
+    background-color: black;
     width: 100%;
      position: fixed;
     top: 80px;
-    background: #ebe;
+    background: black;
     height: 0px;
 }
 .nav-list{
@@ -29,7 +30,7 @@
     width: 25%
     justify-content: center;
      align-items: center;
-    background-color: transparent;
+    background-color: black;
 }
 .nav-list li {
     list-style: none;
@@ -49,12 +50,13 @@
     width: 50%;
     text-align: right;
     padding: 0 23px; 
+    background-color: black;
  }
 
 #search{
     padding: 5px;
     font-size: 17px;
-    border: 2px solid grey;
+    border: 2px solid black;
     border-radius: 9px;
 }
 
@@ -99,12 +101,13 @@
 
 .text-big{
     font-size: 40px;
-    -webkit-text-stroke:   1px white; 
-          
+    -webkit-text-stroke:   0.5px white;   
+    text-align: end;        
 }
 
-.text-small{
-    font size: 60px;
+.text{
+    font-size: 30px;
+    -webkit-text-stroke:   0.5px white;
   }
 .btn{
     padding: 8px 20px;
@@ -184,4 +187,15 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     border: 2px solid grey;
     border-radius: 6px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section1{
+    padding: 100px 0;
+}
+.serviceTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.service{     
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
 }
