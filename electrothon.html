@@ -7,8 +7,8 @@
      <title>PETSPORIUM</title>
 </head>   
 <body> 
-     <nav class="navbar background"  >
-         <ul class="nav-list">
+     <nav class="navbar background h-nav-resp"  >
+         <ul class="nav-list v-class-resp">
             <div class="logo"><img src="img/logo.png" alt="logo"></div>
           
             <li><a href="#home">Home</a></li>
@@ -16,18 +16,25 @@
             <li><a href="#service">Service</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <div class="rightNav">
+          <div class="rightNav v-class-resp">
               <input type="text" name="search" id="search">
               <button class="btn btn-sm">Search</button>             
+          </div>
+          <div class="burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
           </div>
     </nav>
 
     <section class="background firstSection">
         <div class="box-main">
             <div class="firstHalf">
-                <p class="text-big">PETSPORIUM: </p>
+                <p class="text-big">PETSPORIUM:</p>
             </div>
-                <p class="text">For Wagging Tails and More</p>
+                <div class="secondHalf">
+                    <p class="text">For Wagging Tails and More</p> 
+                </div>
             <div class="buttons">
                 <button class="btn">Share</button>
             </div>
@@ -35,7 +42,7 @@
         </div>
 
     </section>
-    <section class="section">
+    <section class="section" id="section">
         <div class="paras">
         <p class="sectionTag">ABOUT US</p>
         <p class="sectionSubTag ">Pets are awesome and deserve nothing but the best. Often pets at home play with their owners. They may look happy but their real happiness comes out when they play with their own species. 
@@ -43,22 +50,21 @@
             Future expansions of the app will include providing additional services like pet food, pet accessories, pet care (day care for pets), vet appointments and vaccination alerts and most important a query forum where we connect the pet owners to pet specialists</p>
         </div>
             <div class="thumbnail">
-                <img src="https://source.unsplash.com/900x900/?pets,footsteps,dog" alt="laptop image" class="imgFluid">
+        <img src="https://source.unsplash.com/900x900/?pets,dogs,animal steps
+        " alt="laptop image" class="imgFluid">
     </div>
+    </section> 
+    <section class="section1">
+        <div class="service">
+            <p class="serviceTag">SERVICES</p>
+            <button class="btn-play">PLAYDATE</button>
+            <button class="btn-shop">SHOP</button>
+            <button class="btn-gallery">GALLERY</button>
+            <button class="btn-qa">Q/A</button>
+            <button class="btn-reviews">REVIEWS</button>
+        </div>
     </section>
-    
-<section class="section1">
-    <div class="service">
-        <p class="serviceTag">SERVICES</p>
-        <button class="btn-play">PLAYDATE</button>
-        <button class="btn-shop">SHOP</button>
-        <button class="btn-gallery">GALLERY</button>
-        <button class="btn-qa">Q/A</button>
-        <button class="btn-reviews">REVIEWS</button>
-    </div>
-</section>
-
- <section class="contact"></class>
+ <section class="contact" id="contact"></class>
     <h1 class="text-centre"  >Contact Us</h1>
     <div class="form">
          <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name"> 
@@ -67,10 +73,17 @@
               <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate your concern"></textarea>
 
          <button class="btn btn-dark">Submit</button> 
- 
+
 
     </div>
 
  </section>
+ <footer >
+    <p class="text-footer">
+        Copyright &copy; 2021 www.Petsporium.com - All rights reserved.
+    </p>
+ </footer>
+ <script src="js/resp.js"></script>
+
 </body>
 </html>
